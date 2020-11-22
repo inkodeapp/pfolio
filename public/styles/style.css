@@ -1,36 +1,66 @@
-:root{
-    --color-blue:#154360;
-    --color-primary: #343353;
-    --color-secondary: #ff4c60;
-    --color-terciary: #ffd15c;
-    --font-primary:'Noto Sans JP', sans-serif;
+:root {
+  --color-primary: #154360;
+  --color-secondary: #c70039;
+  --color-terciary: #ffd15c;
+  --font-primary: "Noto Sans JP", sans-serif;
 }
 
-
-.navbar{
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-    background-color: var(--color-blue);
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family:var(--font-primary);
+.navbar {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  background-color: var(--color-primary);
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: var(--font-primary);
+  font-size: 16px;
 }
 
-.imgperfil{
-    width: 108px;
-    height: 108px;
-    border-radius: 50px;
+.imgperfil {
+  width: 108px;
+  height: 108px;
+  border-radius: 50px;
 }
 
-@media(min-width:480px){
-    .navbar{
-        width: 250px;
-    }
+.nombre {
+  margin-top: 65px;
+  margin-bottom: 0px;
+}
 
+.titulo {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.contact {
+  margin-top: 24px;
+  border-radius: 50px;
+  background-color: var(--color-secondary);
+  color: white;
+  font-family: var(--font-primary);
+  padding: 10px;
+  border: solid 1px var(--color-secondary);
+}
+
+.contact:focus,
+.contact:hover {
+  outline: none;
+  background-color: #c70032;
+}
+
+@media (min-width: 480px) {
+  .navbar {
+    width: 250px;
+  }
 }
