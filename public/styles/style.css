@@ -37,18 +37,19 @@
   margin-bottom: 18px;
 }
 
-.iconsnav{
+.iconsnav {
   display: flex;
 }
-
 
 .imglogo {
   width: 25px;
   height: 25px;
   margin-left: 5px;
   margin-right: 5px;
+  box-sizing: border-box;
 }
-.logos{
+
+.logos {
   width: 25px;
   height: 25px;
   margin-left: 5px;
