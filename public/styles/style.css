@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+}
+
 :root {
   --color-primary: #154360;
   --color-secondary: #c70039;
@@ -8,10 +12,36 @@
 .navbar {
   height: 100vh;
   position: absolute;
-  width: 100%;
+  width: 25%;
   background-color: var(--color-primary);
-  top: 0;
-  left: 0;
+
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: var(--font-primary);
+  border-right: 1px solid gray;
+  box-sizing: border-box;
+  padding: 0px 50px;
+  display: none;
+}
+
+.titlen {
+  margin-top: 60px;
+  margin-bottom: 103px;
+  font-size: 28px;
+}
+
+.items {
+  margin: 8px 0px;
+  list-style: none;
+}
+
+.nonav {
+  height: 100vh;
+  position: relative;
+
+  background-color: var(--color-primary);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +49,9 @@
   color: white;
   font-family: var(--font-primary);
   font-size: 16px;
+  z-index: 0;
+  width: 100%;
+  left: 0;
 }
 
 .imgperfil {
@@ -27,28 +60,30 @@
   border-radius: 50px;
 }
 
-.nombre {
+.title {
   margin-top: 65px;
   margin-bottom: 0px;
+  font-size: 28px;
 }
 
-.titulo {
+.subtitle {
   margin-top: 18px;
   margin-bottom: 18px;
+  font-size: 16px;
 }
 
 .iconsnav {
   display: flex;
 }
 
-.imglogo {
+.icons {
   width: 25px;
   height: 25px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
-.contact {
+.button {
   margin-top: 24px;
   border-radius: 50px;
   background-color: var(--color-secondary);
@@ -58,14 +93,26 @@
   border: solid 1px var(--color-secondary);
 }
 
-.contact:focus,
-.contact:hover {
+.button:focus,
+.button:hover {
   outline: none;
   background-color: #c70032;
 }
 
+.scrool {
+  margin-top: 60px;
+  box-sizing: border-box;
+}
+.scrool {
+  margin-bottom: 12px;
+}
+
 @media (min-width: 480px) {
   .navbar {
-    width: 250px;
+    display: flex;
+  }
+  .nonav {
+    width: 75%;
+    left: 25%;
   }
 }
