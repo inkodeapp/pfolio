@@ -39,7 +39,7 @@
   position: relative;
   font-family: var(--font-primary);
   left: 0;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(245, 245, 245);
 }
 
 .nonav {
@@ -164,6 +164,11 @@ box-shadow: 1px 1px 1px 1px gray;
   padding: 30px;
 }
 
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
 
 
 @media (min-width: 480px) {
@@ -184,5 +189,9 @@ box-shadow: 1px 1px 1px 1px gray;
   .description{
     display: flex;
   }
-  
+
+  .card{
+    display: flex;
+    flex-direction: row;
+  }
 }
