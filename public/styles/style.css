@@ -30,12 +30,27 @@
   font-size: 28px;
 }
 
-.items {
-  margin: 8px 0px;
-  list-style: none;
+.listanav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
 }
 
-.cuerpo{
+.items {
+  margin: 8px 0px;
+  height: 32px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.iconos {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.cuerpo {
   position: relative;
   font-family: var(--font-primary);
   left: 0;
@@ -51,12 +66,12 @@
   align-items: center;
   flex-direction: column;
   color: white;
-
   font-size: 16px;
   z-index: 0;
   width: 100%;
   left: 0;
   box-sizing: border-box;
+  padding-bottom: 290px;
 }
 
 .imgperfil {
@@ -91,13 +106,13 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  
 }
-@keyframes transicionar{
-  from{
+
+@keyframes transicionar {
+  from {
     transform: scale(1);
   }
-  to{
+  to {
     transform: scale(1.1);
   }
 }
@@ -121,53 +136,95 @@
 .scrool {
   margin-top: 60px;
   box-sizing: border-box;
-}
-.scrool {
   margin-bottom: 12px;
 }
 
-.aboutme{
-position: relative;
-padding: 55px 60px;
-display: flex;
-flex-direction: column;
+
+.aboutme {
+  position: relative;
+  padding: 55px 60px;
+  display: flex;
+  flex-direction: column;
 }
 
-.contactme{
-  margin:38px 0px;
+.about {
+  margin: 38px 0px;
   box-sizing: border-box;
   font-size: 28px;
 }
 
-.mensaje{
-  margin-bottom: 16px;
-  font-size: 18px;
-}
-
-.description{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imgperfil1{
+.imgperfil1 {
   width: 150px;
   height: 150px;
   border-radius: 100px;
   margin-bottom: 20px;
 }
 
-.card{
+.card {
   background-color: white;
-box-shadow: 1px 1px 1px 1px gray;
+  box-shadow: 1px 1px 1px 1px gray;
   border-radius: 10px;
   padding: 30px;
 }
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 label {
   padding-right: 10px;
   font-size: 1rem;
 }
+
+
+.services {
+  position: relative;
+  padding: 55px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardservices{
+  display: flex;
+  align-items: center;
+
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.imgservices{
+  width: 100px;
+  height: 100px;
+
+}
+
+.cardp{
+  font-size: 16px;
+
+}
+
+.containers{
+  display: flex;
+  flex-direction: column;
+}
+
+.cardservicesc{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 52px 0px;
+}
+
+
 
 
 
@@ -181,17 +238,28 @@ label {
     left: 0;
   }
 
-  .cuerpo{
+  .cuerpo {
     width: 75%;
     left: 25%;
   }
 
-  .description{
+  .description {
     display: flex;
   }
 
-  .card{
+  .card {
     display: flex;
     flex-direction: row;
   }
+
+  .containers{
+flex-direction: row;
+  }
+
+  .cardservicesc{
+    margin: 0px 52px;
+  }
+  
+
+  
 }

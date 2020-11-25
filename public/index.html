@@ -16,12 +16,12 @@
       <span class="titlen">Johan Alvarado</span>
 
       <ul class="listanav">
-        <li class="items">HOME</li>
-        <li class="items">Sobre mi</li>
-        <li class="items">Servicios</li>
-        <li class="items">Experiencia</li>
-        <li class="items">Mis trabajos</li>
-        <li class="items">Contactame</li>
+        <li class="items"> <img src="static/home.svg" alt="home" class="iconos"> HOME</li>
+        <li class="items"> <img src="static/usuario.svg" alt="home" class="iconos"> Sobre mi</li>
+        <li class="items"> <img src="static/equipo.svg" alt="home" class="iconos"> Servicios</li>
+        <li class="items"> <img src="static/apoyo.svg" alt="home" class="iconos"> Experiencia</li>
+        <li class="items"> <img src="static/cronologia.svg" alt="home" class="iconos"> Mis trabajos</li>
+        <li class="items"> <img src="static/servicio.svg" alt="home" class="iconos"> Contactame</li>
       </ul>
     </nav>
 
@@ -65,7 +65,7 @@
       </div>
 
       <div class="aboutme">
-        <span class="contactme">Sobre mi</span>
+        <span class="about">Sobre mi</span>
         <div class="description">
           <img
             src="static/perfil.jpg"
@@ -89,9 +89,13 @@
               <button type="button" class="button">Ver curriculum</button></a
             ></div>
 
-            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: column;">
               <label for="file">HTML</label>
               <progress id="file" max="100" value="10"> 10% </progress>
+
+              <div class="w3-progress-container">
+                <div class="w3-progressbar" style="width:10%"></div>
+              </div>
               <label for="file">CSS</label>
               <progress id="file" max="100" value="20"> 20% </progress>
               <label for="file">Kotlin</label>
@@ -101,6 +105,40 @@
           </div>
         </div>
       </div>
+
+      <div class="services">
+          <span class="about">Servicios</span>
+          <div class="containers">
+          <div class="cardservices" style="background-color: #45C3FF;">
+          <img src="static/kotlin.png" alt="kotlin" class="imgservices">
+          <span style="font-size: 18px;">Kotlin</span>
+          <p class="cardp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sunt, quisquam, dignissimos, pariatur vero quasi recusandae accusamus quia cumque earum laborum velit repellat impedit reprehenderit minima eas.</p>
+        </div>
+
+
+        <div class="cardservicesc" style="background-color: #526BFF;" >
+          <img src="static/html.png" alt="html" class="imgservices">
+          <span style="font-size: 18px;">HTML</span>
+          <p class="cardp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sunt, quisquam, dignissimos, pariatur vero quasi recusandae accusamus quia cumque earum laborum velit repellat impedit reprehenderit minima eas.</p>
+        </div>
+
+        <div class="cardservices" style="background-color: #8D45FF;">
+          <img src="static/css.png" alt="css" class="imgservices">
+          <span style="font-size: 18px;">CSS</span>
+          <p class="cardp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sunt, quisquam, dignissimos, pariatur vero quasi recusandae accusamus quia cumque earum laborum velit repellat impedit reprehenderit minima eas.</p>
+        </div>
+
+        
+</div>
+      </div>
+
+
+
+
+
+
+
+
     </div>
   </body>
 </html>
