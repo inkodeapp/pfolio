@@ -201,12 +201,13 @@ label {
 .imgservices{
   width: 100px;
   height: 100px;
+  margin-bottom: 22px;
 
 }
 
 .cardp{
   font-size: 16px;
-
+margin-top: 22px;
 }
 
 .containers{
