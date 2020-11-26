@@ -225,6 +225,16 @@ margin-top: 22px;
   margin: 52px 0px;
 }
 
+.cardexp{
+  display: flex;
+  align-items: flex-start;
+  border-radius: 20px;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 52px 0px;
+}
+
 
 
 
