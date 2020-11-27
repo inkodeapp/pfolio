@@ -246,6 +246,49 @@ label {
   
 }
 
+.cardtrabajos {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 20px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.cardtrabajosc {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 20px 52px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+
+}
+.imgtrabajos {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.imgtrabajos:hover {
+ padding: 30px;
+ opacity: 0.2;
+}
+
+.cardtrabajosc:hover,.cardtrabajos:hover {
+  background-color: blue;
+  opacity: 0.5;
+}
+
+.boton{
+  display: flex;
+  justify-content: center;
+}
 
 @media (min-width: 480px) {
   .navbar {
