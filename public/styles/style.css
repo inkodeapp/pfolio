@@ -22,11 +22,53 @@ body{
   flex-direction: column;
   color: white;
   font-family: var(--font-primary);
-
   box-sizing: border-box;
   padding: 0px 50px;
   display: none;
 
+}
+li:hover{
+  font-size: 17px;
+}
+
+.nonavmenu {
+  height: 100%;
+  position: relative;
+  background-color: var(--color-primary);
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  z-index: 0;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+
+}
+
+.menu{
+width: 40px;
+height: 40ps;
+position: absolute;
+left: 10px;
+top: 10px;
+
+}
+
+#menu{
+  display: none;
+}
+
+
+#menu:checked ~ ul{
+  display: flex; 
+  flex-direction: column;
+}
+
+.listanavm{
+  display: none;
 }
 
 .titlen {
@@ -306,7 +348,11 @@ label {
 
 .footer{
   background-color: var(--color-primary);
-
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-family: var(--font-primary);
 
 }
 
@@ -347,5 +393,8 @@ label {
   }
   .dividir {
     margin: 10px;
+  }
+  .menu{
+    display: none;
   }
 }
