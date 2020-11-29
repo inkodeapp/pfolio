@@ -349,18 +349,58 @@ label {
   font-family: var(--font-primary);
 }
 
-.namemail{
+.namemail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#name {
+  margin-right: 0px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+
+#mail { 
+  margin-right: 0;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+
+.cont {
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 480px) {
+#message {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
 
-  .namemail{
+label{
+  padding: 0px;
+
+}
+@media (min-width: 480px) {
+  #name {
+    margin-right: 20px;
+    margin-bottom: 0px;
+    
+  }
+
+  .namemail {
     flex-direction: row;
   }
   .contactme {
-    display: flex;
+    flex-direction: row;
   }
 
   .navbar {
