@@ -8,11 +8,9 @@
   --color-secondary: #c70039;
   --color-terciary: #ffd15c;
   --font-primary: "Noto Sans JP", sans-serif;
-}
-
-body {
   background-color: var(--color-primary);
 }
+
 .navbar {
   height: auto;
   position: absolute;
@@ -26,8 +24,9 @@ body {
   padding: 0px 50px;
   display: none;
 }
+
 li:hover {
-  font-size: 17px;
+  font-size: 103%;
 }
 
 .nonavmenu {
@@ -303,16 +302,6 @@ label {
   background-color: rgb(255, 255, 255);
 }
 
-.cardtrabajosc {
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-  flex-direction: column;
-  box-sizing: border-box;
-  margin: 20px 52px;
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-}
 .imgtrabajos {
   width: 200px;
   height: 200px;
@@ -320,14 +309,13 @@ label {
 }
 
 .imgtrabajos:hover {
-  padding: 30px;
-  opacity: 0.2;
+  padding: 10px;
+  opacity: 0.8;
 }
 
-.cardtrabajosc:hover,
 .cardtrabajos:hover {
-  background-color: blue;
-  opacity: 0.5;
+  background-color: blueviolet;
+  opacity: 0.3;
 }
 
 .boton {
@@ -344,10 +332,9 @@ label {
   background-color: var(--color-primary);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   color: white;
   font-family: var(--font-primary);
-
 }
 
 .namemail {
@@ -365,7 +352,7 @@ label {
   border: 1px solid gray;
 }
 
-#mail { 
+#mail {
   margin-right: 0;
   border-radius: 20px;
   padding: 5px;
@@ -386,17 +373,14 @@ label {
   border: 1px solid gray;
 }
 
-label{
+label {
   padding: 0px;
-
 }
-
 
 @media (min-width: 480px) {
   #name {
     margin-right: 20px;
     margin-bottom: 0px;
-    
   }
 
   .namemail {
