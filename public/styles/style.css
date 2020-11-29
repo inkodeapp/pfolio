@@ -344,9 +344,10 @@ label {
   background-color: var(--color-primary);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: white;
   font-family: var(--font-primary);
+
 }
 
 .namemail {
@@ -389,6 +390,8 @@ label{
   padding: 0px;
 
 }
+
+
 @media (min-width: 480px) {
   #name {
     margin-right: 20px;
