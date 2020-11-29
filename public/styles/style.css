@@ -10,7 +10,7 @@
   --font-primary: "Noto Sans JP", sans-serif;
 }
 
-body{
+body {
   background-color: var(--color-primary);
 }
 .navbar {
@@ -25,9 +25,8 @@ body{
   box-sizing: border-box;
   padding: 0px 50px;
   display: none;
-
 }
-li:hover{
+li:hover {
   font-size: 17px;
 }
 
@@ -45,29 +44,26 @@ li:hover{
   width: 100%;
   left: 0;
   box-sizing: border-box;
-
 }
 
-.menu{
-width: 40px;
-height: 40ps;
-position: absolute;
-left: 10px;
-top: 10px;
-
+.menu {
+  width: 40px;
+  height: 40ps;
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
-#menu{
+#menu {
   display: none;
 }
 
-
-#menu:checked ~ ul{
-  display: flex; 
+#menu:checked ~ ul {
+  display: flex;
   flex-direction: column;
 }
 
-.listanavm{
+.listanavm {
   display: none;
 }
 
@@ -207,10 +203,9 @@ top: 10px;
   margin-bottom: 20px;
 }
 
-.secciones{
-color: white;
-text-decoration: none;
-
+.secciones {
+  color: white;
+  text-decoration: none;
 }
 .card {
   background-color: white;
@@ -342,21 +337,32 @@ label {
 
 .contactme {
   display: flex;
-
+  flex-direction: column;
 }
 
-
-.footer{
+.footer {
   background-color: var(--color-primary);
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-family: var(--font-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--font-primary);
+}
 
+.namemail{
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 480px) {
+
+  .namemail{
+    flex-direction: row;
+  }
+  .contactme {
+    display: flex;
+  }
+
   .navbar {
     display: flex;
   }
@@ -394,7 +400,7 @@ font-family: var(--font-primary);
   .dividir {
     margin: 10px;
   }
-  .menu{
+  .menu {
     display: none;
   }
 }
