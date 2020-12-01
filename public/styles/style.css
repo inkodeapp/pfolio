@@ -303,6 +303,20 @@ label {
   background-color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.cardtrabajos:hover > span{
+  position: absolute;
+top: 30px;
+left: 30px;
+color: white;
+display: flex;
+font-size: 28px;
+}
+
+.textosimg{
+display: none;
 }
 
 .imgtrabajos {
@@ -315,14 +329,19 @@ label {
 
 .imgtrabajos:hover {
 padding: 30px;
-  opacity: 0.8;
+  opacity: 0.3;
   border-radius: 20px;
 }
 
 .cardtrabajos:hover {
-  background-color: blueviolet;
+  background-color: purple;
   opacity: 0.3;
+
 }
+
+
+
+
 
 .boton {
   display: flex;
@@ -347,6 +366,7 @@ padding: 30px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
 }
 
 #name {
@@ -356,6 +376,7 @@ padding: 30px;
   padding: 5px;
   box-sizing: border-box;
   border: 1px solid gray;
+
 }
 
 #mail {
@@ -365,6 +386,10 @@ padding: 30px;
   box-sizing: border-box;
   border: 1px solid gray;
 }
+
+#name:focus,#mail:focus{
+  border-style: none;
+  }
 
 .cont {
   display: flex;
