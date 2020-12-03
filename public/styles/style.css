@@ -137,6 +137,11 @@ li:hover {
 
 .iconsnav {
   display: flex;
+  margin-bottom: 24px;
+}
+
+.iconsfooter {
+  display: flex;
 }
 
 .icons {
@@ -161,7 +166,7 @@ li:hover {
 }
 
 .button {
-  margin-top: 24px;
+  margin-top: 0px;
   border-radius: 50px;
   background-color: var(--color-secondary);
   color: white;
@@ -211,6 +216,10 @@ li:hover {
   box-shadow: 1px 1px 1px 1px gray;
   border-radius: 10px;
   padding: 30px;
+}
+
+.parrafo{
+  margin-bottom: 24px;
 }
 
 .description {
@@ -299,11 +308,28 @@ label {
   box-sizing: border-box;
   width: auto;
   height: 150px;
-  margin: 20px 0px;
+  margin-bottom: 20px;
   background-color: rgb(255, 255, 255);
   align-items: center;
   justify-content: center;
   position: relative;
+  border: 1px solid rgb(197, 197, 197);
+}
+
+.cardtrabajosc {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: auto;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid rgb(197, 197, 197);
 }
 
 .cardtrabajos:hover > span{
@@ -402,6 +428,7 @@ padding: 30px;
   padding: 5px;
   box-sizing: border-box;
   border: 1px solid gray;
+  margin-bottom: 24px;
 }
 
 label {
@@ -465,6 +492,13 @@ label {
   .cardtrabajos{
     width: 300px;
     height: 150px;
+  }
+
+  .cardtrabajosc{
+    width: 300px;
+    height: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .nonavmenu {
