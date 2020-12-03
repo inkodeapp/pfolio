@@ -332,7 +332,8 @@ label {
   border: 1px solid rgb(197, 197, 197);
 }
 
-.cardtrabajos:hover > span{
+
+.cardtrabajos:hover > span,.cardtrabajosc:hover > span{
   position: absolute;
 top: 30px;
 left: 30px;
@@ -359,7 +360,7 @@ padding: 30px;
   border-radius: 20px;
 }
 
-.cardtrabajos:hover {
+.cardtrabajos:hover, .cardtrabajosc:hover {
   background-color: purple;
   opacity: 0.3;
 
