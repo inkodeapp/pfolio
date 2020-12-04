@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
-
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="normalize.css" />
   <title>Johan Alvarado</title>
@@ -14,47 +13,51 @@
 
 <body>
 
-  <nav class="navbar">
-    <span class="titlen">Johan Alvarado</span>
-    <ul class="listanav">
-      <li class="items"> <a href="#casa" class="secciones"><img src="static/home.svg" alt="home" class="iconos">
+  
+  <nav class="navBar">
+    <span class="titleNavBar">Johan Alvarado</span>
+    <ul class="listaNavBar">
+      <li class="items"> <a href="#casa" class="secciones"><img src="static/home.svg" alt="home" class="icons">
           Home</a></li>
-      <li class="items"> <a href="#sobremi" class="secciones"><img src="static/usuario.svg" alt="home" class="iconos">
+      <li class="items"> <a href="#sobremi" class="secciones"><img src="static/usuario.svg" alt="home" class="icons">
           Sobre mi</a></li>
-      <li class="items"> <a href="#servicios" class="secciones"><img src="static/equipo.svg" alt="home" class="iconos">
+      <li class="items"> <a href="#servicios" class="secciones"><img src="static/equipo.svg" alt="home" class="icons">
           Servicios</a></li>
-      <li class="items"> <a href="#experiencia" class="secciones"><img src="static/apoyo.svg" alt="home" class="iconos">
+      <li class="items"> <a href="#experiencia" class="secciones"><img src="static/apoyo.svg" alt="home" class="icons">
           Experiencia</a></li>
       <li class="items"> <a href="#trabajos" class="secciones"><img src="static/cronologia.svg" alt="home"
-            class="iconos"> Mis trabajos</a></li>
-      <li class="items"> <a href="#contacto" class="secciones"><img src="static/servicio.svg" alt="home" class="iconos">
+            class="icons"> Mis trabajos</a></li>
+      <li class="items"> <a href="#contacto" class="secciones"><img src="static/servicio.svg" alt="home" class="icons">
           Contáctame</a></li>
     </ul>
   </nav>
 
-  <div class="cuerpo">
-    <div class="nonavmenu">
-      <label for="menu"><img src="static/menu.svg" alt="menu" class="menu"></label>
+
+  <section class="cuerpo">
+    <section class="menuMobile">
+      <label for="menu"><img src="static/menu.svg" alt="menu" class="menuIcon"></label>
       <input type="checkbox" name="" id="menu">
-      <ul class="listanavm">
-        <li class="items"> <a href="#casa" class="secciones"><img src="static/home.svg" alt="home" class="iconos">
+      <ul class="listaNavBarMobile">
+        <li class="items"> <a href="#casa" class="secciones"><img src="static/home.svg" alt="home" class="icons">
             Home</a></li>
-        <li class="items"> <a href="#sobremi" class="secciones"><img src="static/usuario.svg" alt="home" class="iconos">
+        <li class="items"> <a href="#sobremi" class="secciones"><img src="static/usuario.svg" alt="home" class="icons">
             Sobre mi</a></li>
         <li class="items"> <a href="#servicios" class="secciones"><img src="static/equipo.svg" alt="home"
-              class="iconos">
+              class="icons">
             Servicios</a></li>
         <li class="items"> <a href="#experiencia" class="secciones"><img src="static/apoyo.svg" alt="home"
-              class="iconos">
+              class="icons">
             Experiencia</a></li>
         <li class="items"> <a href="#trabajos" class="secciones"><img src="static/cronologia.svg" alt="home"
-              class="iconos"> Mis trabajos</a></li>
+              class="icons"> Mis trabajos</a></li>
         <li class="items"> <a href="#contacto" class="secciones"><img src="static/servicio.svg" alt="home"
-              class="iconos">
+              class="icons">
             Contáctame</a></li>
       </ul>
-    </div>
-    <div class="nonav" id="casa">
+    </section>
+
+    
+    <section class="nonav" id="casa">
       <img src="static/perfil.jpg" alt="perfil" class="imgperfil" />
       <h1 class="title">Johan Alvarado</h1>
       <h3 class="subtitle">Kotlin Developer</h3>
@@ -75,8 +78,9 @@
         <button type="button" class="button">Contáctame</button></a>
       <span class="scrool">Scrool Down</span>
       <img class="icons" src="static/arrows.svg" alt="scrool" />
-    </div>
-    <div class="aboutme" id="sobremi">
+    </section>
+
+    <section class="aboutme" id="sobremi">
       <span class="about">Sobre mi</span>
       <div class="description">
         <img src="static/perfil.jpg" alt="imagen de perfil" class="imgperfil1" />
@@ -90,12 +94,9 @@
               target="_blank" rel="noopener noreferrer">
               <button type="button" class="button">Ver curriculum</button></a>
           </div>
-          <div style="display: flex; flex-direction: column;">
+          <div class="pbar">
             <label for="file1">HTML</label>
             <progress id="file1" max="100" value="10"> 10% </progress>
-            <div class="w3-progress-container">
-              <div class="w3-progressbar" style="width:10%"></div>
-            </div>
             <label for="file2">CSS</label>
             <progress id="file2" max="100" value="20"> 20% </progress>
             <label for="file3">Kotlin</label>
@@ -104,86 +105,91 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="services" id="servicios">
+    </section>
+
+    <section class="services" id="servicios">
       <span class="about">Servicios</span>
       <div class="containers">
         <div class="cardservices" style="background-color: #45C3FF;">
           <img src="static/kotlin.png" alt="kotlin" class="imgservices">
-          <span style="font-size: 18px;">Kotlin</span>
+          <span class="spanLang">Kotlin</span>
           <p class="cardp">Manejo de Kotlin como lenguaje de programacion de tipado estatico que permite elaborar
             aplicaciones moviles y de servidor.</p>
         </div>
         <div class="cardservicesc" style="background-color: #526BFF;">
           <img src="static/html.png" alt="html" class="imgservices">
-          <span style="font-size: 18px;">HTML</span>
+          <span class="spanLang">HTML</span>
           <p class="cardp">Manejo del lenguaje marcas de hipertexto, con el que se
             realiza la creación básica de páginas web.</p>
         </div>
         <div class="cardservices" style="background-color: #8D45FF;">
           <img src="static/css.png" alt="css" class="imgservices">
-          <span style="font-size: 18px;">CSS</span>
+          <span class="spanLang">CSS</span>
           <p class="cardp">creacion de la presentación de un documento
             estructurado escrito en un lenguaje de marcado.​</p>
         </div>
       </div>
-    </div>
-    <div class="services" id="experiencia">
+    </section>
+
+    <section class="services" id="experiencia">
       <span class="about">Experiencia</span>
       <div class="containers">
-        <div class="cardexp" style="background-color: white;">
+        <div class="cardexp">
           <h3 class="experiencia">Laboral</h3>
-          <span style="font-size: 18px; text-align: start;">2019-Junio</span>
+          <span class="spanExp">2019-Junio</span>
           <h4 class="experiencia">Grupo Solvens S.R.L.</h4>
           <p class="cardpe">Auxiliar de Sisemas.</p>
-          <span style="font-size: 18px; text-align: start;">2017-Agosto/2019-Enero</span>
+          <span class="spanExp">2017-Agosto/2019-Enero</span>
           <h4 class="experiencia">Acj High Voltage Ltda.</h4>
           <p class="cardpe">Auxiliar de Sisemas y Analista de datos.</p>
         </div>
         <div class="dividir"> </div>
-        <div class="cardexp" style="background-color: white;">
+        <div class="cardexp">
           <h3 class="experiencia">Academica</h3>
-          <span style="font-size: 18px; text-align: start;">2020-Mayo</span>
+          <span class="spanExp">2020-Mayo</span>
           <h4 class="experiencia">Google</h4>
           <p class="cardpe">Curso de Desarrollo de Apps Móviles.</p>
-          <span style="font-size: 18px; text-align: start;">2019-Diciembre</span>
+          <span class="spanExp">2019-Diciembre</span>
           <h4 class="experiencia">SoloLearn</h4>
           <p class="cardpe">SQL.</p>
-          <span style="font-size: 18px; text-align: start;">2010-2016</span>
+          <span class="spanExp">2010-2016</span>
           <h4 class="experiencia">Universidad Politécnica Territorial del Zulia</h4>
           <p class="cardpe">Ingeniería electrónica.</p>
-          <span style="font-size: 18px; text-align: start;">2014-actualidad</span>
+          <span class="spanExp">2014-actualidad</span>
           <h4 class="experiencia">Instituto Universitario Politécnico Santiago Mariño</h4>
           <p class="cardpe">Ingeniería de sistemas.</p>
         </div>
       </div>
-    </div>
-    <div class="services" id="trabajos">
+    </section>
+
+    <section class="services" id="trabajos">
       <span class="about">Trabajos</span>
       <div class="containers">
         <div class="cardtrabajos">
+          <span class="textosimg">Mi Portfolio</span>
           <img src="static/pfolio.png" alt="kotlin" class="imgtrabajos">
         </div>
-
         <div class="cardtrabajosc">
+          <span class="textosimg">Inkodeapp</span>
           <img src="static/inkode.png" alt="html" class="imgtrabajos">
         </div>
-
         <div class="cardtrabajos">
-          <img src="static/trabajo-3.svg" alt="css" class="imgtrabajos">
+          <span class="textosimg">Youtube</span>
+          <img src="static/youtube.png" alt="css" class="imgtrabajos">
         </div>
       </div>
       <div class="containers">
         <div class="cardtrabajos">
-          <img src="static/trabajo-4.svg" alt="kotlin" class="imgtrabajos">
+        <span class="textosimg">Trabajo 1</span>
+          <img src="static/trabajo-1.svg" alt="kotlin" class="imgtrabajos">
         </div>
-
         <div class="cardtrabajosc">
-          <img src="static/trabajo-5.svg" alt="html" class="imgtrabajos">
+          <span class="textosimg">Trabajo 2</span>
+          <img src="static/trabajo-2.svg" alt="html" class="imgtrabajos">
         </div>
-
         <div class="cardtrabajos">
-          <img src="static/trabajo-6.svg" alt="css" class="imgtrabajos">
+          <span class="textosimg">Trabajo 3</span>
+          <img src="static/trabajo-3.svg" alt="css" class="imgtrabajos">
         </div>
       </div>
       <div class="boton">
@@ -191,29 +197,27 @@
           target="_blank" rel="noopener noreferrer">
           <a href="trabajos.html"><button type="button" class="button">Ver Todos</button></a>
       </div>
-    </div>
-    <div class="services" id="contacto">
+    </section>
+
+    <section class="services" id="contacto">
       <span class="about">Contáctame</span>
       <div class="contactme">
-        <div class="cont" style="margin-right: 10px; margin-bottom: 20px;">
+        <div class="cont">
           <span style="margin-bottom: 16px;">Enviame un mensaje</span>
           <span>Puedes contactarte conmigo a través del siguiente formulario.</span>
         </div>
         <form action="index.html" method="GET" id="formulario">
-          <div class="namemail">
-            <label for="name"></label>
+          <div class="datosForm">
             <input type="text" id="name" name="name" placeholder="Nombre">
-            <label for="mail"></label>
             <input type="text" id="mail" name="mail" placeholder="Correo Electronico">
           </div>
-          <label for="message"></label>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
           <button type="submit" class="button">Enviar</button>
         </form>
       </div>
-    </div>
-  </div>
-  
+    </section>
+  </section>
+
   <footer class="footer">
     <h3 class="subtitle" style="margin-right: 25px;">Johan Alvarado</h3>
     <div class="iconsfooter">

@@ -11,7 +11,7 @@
   background-color: var(--color-primary);
 }
 
-.navbar {
+.navBar {
   height: auto;
   position: absolute;
   width: 25%;
@@ -29,7 +29,7 @@ li:hover {
   font-size: 103%;
 }
 
-.nonavmenu {
+.menuMobile {
   height: 100%;
   position: relative;
   background-color: var(--color-primary);
@@ -45,7 +45,7 @@ li:hover {
   box-sizing: border-box;
 }
 
-.menu {
+.menuIcon {
   width: 40px;
   height: 40ps;
   position: absolute;
@@ -62,17 +62,17 @@ li:hover {
   flex-direction: column;
 }
 
-.listanavm {
+.listaNavBarMobile {
   display: none;
 }
 
-.titlen {
+.titleNavBar {
   margin-top: 60px;
   margin-bottom: 103px;
   font-size: 28px;
 }
 
-.listanav {
+.listaNavBar {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -86,7 +86,7 @@ li:hover {
   font-size: 16px;
 }
 
-.iconos {
+.icons {
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -156,15 +156,6 @@ li:hover {
   animation-direction: alternate;
 }
 
-@keyframes transicionar {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.1);
-  }
-}
-
 .button {
   margin-top: 0px;
   border-radius: 50px;
@@ -218,7 +209,7 @@ li:hover {
   padding: 30px;
 }
 
-.parrafo{
+.parrafo {
   margin-bottom: 24px;
 }
 
@@ -278,12 +269,18 @@ label {
   width: 100%;
 }
 
+.spanExp {
+  font-size: 18px;
+  text-align: start;
+}
+
 .cardexp {
   align-items: flex-start;
   border-radius: 20px;
   flex-direction: column;
   padding: 30px 30px 30px 80px;
   box-sizing: border-box;
+  background-color: white;
 }
 
 .cardpe {
@@ -332,43 +329,46 @@ label {
   border: 1px solid rgb(197, 197, 197);
 }
 
-
-.cardtrabajos:hover > span,.cardtrabajosc:hover > span{
-  position: absolute;
-top: 30px;
-left: 30px;
-color: white;
-display: flex;
-font-size: 28px;
+.spanLang {
+  font-size: 18px;
 }
 
-.textosimg{
-display: none;
+.pbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardtrabajos:hover > span,
+.cardtrabajosc:hover > span {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  display: flex;
+  font-size: 28px;
+}
+
+.textosimg {
+  display: none;
 }
 
 .imgtrabajos {
   width: 100%;
- height: 100%;
- border-radius: 20px;
-
-
+  height: 100%;
+  border-radius: 20px;
 }
 
 .imgtrabajos:hover {
-padding: 30px;
+  padding: 30px;
   opacity: 0.3;
   border-radius: 20px;
 }
 
-.cardtrabajos:hover, .cardtrabajosc:hover {
+.cardtrabajos:hover,
+.cardtrabajosc:hover {
   background-color: purple;
   opacity: 0.3;
-
 }
-
-
-
-
 
 .boton {
   display: flex;
@@ -389,11 +389,10 @@ padding: 30px;
   font-family: var(--font-primary);
 }
 
-.namemail {
+.datosForm {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-
 }
 
 #name {
@@ -403,7 +402,6 @@ padding: 30px;
   padding: 5px;
   box-sizing: border-box;
   border: 1px solid gray;
-
 }
 
 #mail {
@@ -414,13 +412,16 @@ padding: 30px;
   border: 1px solid gray;
 }
 
-#name:focus,#mail:focus{
+#name:focus,
+#mail:focus {
   border-style: none;
-  }
+}
 
 .cont {
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 #message {
@@ -436,20 +437,29 @@ label {
   padding: 0px;
 }
 
+@keyframes transicionar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
 @media (min-width: 480px) {
   #name {
     margin-right: 20px;
     margin-bottom: 0px;
   }
 
-  .namemail {
+  .datosForm {
     flex-direction: row;
   }
   .contactme {
     flex-direction: row;
   }
 
-  .navbar {
+  .navBar {
     display: flex;
   }
 
@@ -486,23 +496,23 @@ label {
   .dividir {
     margin: 10px;
   }
-  .menu {
+  .menuIcon {
     display: none;
   }
 
-  .cardtrabajos{
+  .cardtrabajos {
     width: 300px;
     height: 150px;
   }
 
-  .cardtrabajosc{
+  .cardtrabajosc {
     width: 300px;
     height: 150px;
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  .nonavmenu {
+  .menuMobile {
     display: none;
   }
 }
