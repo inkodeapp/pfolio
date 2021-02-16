@@ -2,239 +2,342 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="normalize.css" />
-  <title>Johan Alvarado</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <title>Portfolio</title>
 </head>
 
 <body>
-
-
-  <nav class="navBar">
-    <span class="titleNavBar">Johan Alvarado</span>
-    <ul class="listaNavBar">
-      <li class="items"> <a href="#casa" class="secciones"><img src="static/home.svg" alt="home" class="icons">
-          Home</a></li>
-      <li class="items"> <a href="#sobremi" class="secciones"><img src="static/usuario.svg" alt="home" class="icons">
-          Sobre mi</a></li>
-      <li class="items"> <a href="#servicios" class="secciones"><img src="static/equipo.svg" alt="home" class="icons">
-          Servicios</a></li>
-      <li class="items"> <a href="#experiencia" class="secciones"><img src="static/apoyo.svg" alt="home" class="icons">
-          Experiencia</a></li>
-      <li class="items"> <a href="#trabajos" class="secciones"><img src="static/cronologia.svg" alt="home"
-            class="icons"> Mis trabajos</a></li>
-      <li class="items"> <a href="#contacto" class="secciones"><img src="static/servicio.svg" alt="home" class="icons">
-          Contáctame</a></li>
-    </ul>
-  </nav>
-
-
-  <section class="cuerpo">
-    <section class="menuMobile">
-      <label for="menu"><img src="static/menu.svg" alt="menu" class="menuIcon"></label>
-      <input type="checkbox" name="" id="menu">
-      <ul class="listaNavBarMobile">
-        <li class="items"> <a href="#casa" class="secciones"><img src="static/home.svg" alt="home" class="icons">
-            Home</a></li>
-        <li class="items"> <a href="#sobremi" class="secciones"><img src="static/usuario.svg" alt="home" class="icons">
-            Sobre mi</a></li>
-        <li class="items"> <a href="#servicios" class="secciones"><img src="static/equipo.svg" alt="home" class="icons">
-            Servicios</a></li>
-        <li class="items"> <a href="#experiencia" class="secciones"><img src="static/apoyo.svg" alt="home"
-              class="icons">
-            Experiencia</a></li>
-        <li class="items"> <a href="#trabajos" class="secciones"><img src="static/cronologia.svg" alt="home"
-              class="icons"> Mis trabajos</a></li>
-        <li class="items"> <a href="#contacto" class="secciones"><img src="static/servicio.svg" alt="home"
-              class="icons">
-            Contáctame</a></li>
+  <div class="main-container">
+    <section class="navbar-container__desktop">
+      <h1 class="titulo">Johan Alvarado</h1>
+      <ul class="lista-secciones">
+        <li><a href="#home" class="secciones"> <img src="./static/home.svg" alt="icono home" class="iconos">Home</a>
+        </li>
+        <li><a href="#skils" class="secciones"> <img src="./static/usuario.svg" alt="icono home" class="iconos">Sobre
+            mi</a>
+        </li>
+        <li><a href="#services" class="secciones"> <img src="./static/equipo.svg" alt="icono home"
+              class="iconos">Servicios</a>
+        </li>
+        <li><a href="#experience" class="secciones"> <img src="./static/apoyo.svg" alt="icono home"
+              class="iconos">Experiencia</a>
+        </li>
+        <li><a href="#works" class="secciones"> <img src="./static/cronologia.svg" alt="icono home" class="iconos">Mis
+            trabajos</a></li>
+        <li><a href="#contactme" class="secciones"> <img src="./static/servicio.svg" alt="icono home"
+              class="iconos">Contactame</a></li>
       </ul>
+
+
     </section>
+    <div class="full-container">
+      <section class="navbar-container__mobile">
+        <nav class="navbar-container__mobile__list">
+          <label for="navbar" class="navbar-container__mobile__list__label">
+            <input type="checkbox" id="navbar" class="navbar-input" />
+            <div class="navbar-open">
+              <i class="fas fa-bars" style="color:white; margin-bottom: 20px;"></i>
+            </div>
+            <div class="navbar-close">
+              <i class="fas fa-times" style="color:white; margin-bottom: 20px;"></i>
+            </div>
+            <div class="navbar-contet">
+              <ul class="lista-secciones">
+                <li><a href="#home" class="secciones"> <img src="./static/home.svg" alt="icono home"
+                      class="iconos">Home</a>
+                </li>
+                <li><a href="#skils" class="secciones"> <img src="./static/usuario.svg" alt="icono home"
+                      class="iconos">Sobre
+                    mi</a>
+                </li>
+                <li><a href="#services" class="secciones"> <img src="./static/equipo.svg" alt="icono home"
+                      class="iconos">Servicios</a>
+                </li>
+                <li><a href="#experience" class="secciones"> <img src="./static/apoyo.svg" alt="icono home"
+                      class="iconos">Experiencia</a>
+                </li>
+                <li><a href="#works" class="secciones"> <img src="./static/cronologia.svg" alt="icono home"
+                      class="iconos">Mis
+                    trabajos</a></li>
+                <li><a href="#contactme" class="secciones"> <img src="./static/servicio.svg" alt="icono home"
+                      class="iconos">Contactame</a></li>
+            </div>
+          </label>
+        </nav>
+      </section>
+
+      <section class="banner-container" id="home">
+        <div class="background-image">
+          <img src="./static/perfil.jpg" alt="imagen de perfil" class="imgperfil">
+          <h2 class="segundotitulo">Johan Alvarado</h2>
+          <h2 class="subtitulo">Frontend Developer</h2>
+
+          <div class="iconsnav">
+            <a href="https://www.linkedin.com/in/johan-jose-alvarado-4568031a6" target="_blank"><img class="icons"
+                src="static/linkedin.svg" alt="linkedin" /></a>
+            <a href="https://github.com/inkodeapp" target="_blank">
+              <img class="icons" src="static/github.svg" alt="github" /></a>
+            <a href="https://twitter.com/inkodeapp" target="_blank">
+              <img class="icons" src="static/twitter.svg" alt="twitter" /></a>
+            <a href="https://www.instagram.com/inkodeapp/" target="_blank">
+              <img class="icons" src="static/instagram.svg" alt="instagram" /></a>
+            <a href="http://www.inkodeapp.com/" target="_blank">
+              <img class="icons" src="static/web.svg" alt="web" /></a>
+          </div>
+
+          <a href="https://api.whatsapp.com/send?phone=+5491158551054&text=Hola,%20Johan%20Alvarado%20%C2%BFComo%20est%C3%A1s?"
+            target="_blank" rel="noopener noreferrer">
+            <button type="button" class="button">Contáctame</button></a>
+
+        </div>
+        <a class="banner-container__scroll" href="#skils">
+          <span style="margin-bottom: 10px;">Scroll Down</span>
+          <img class="icons" src="static/arrows.svg" alt="scrool" />
+        </a>
+      </section>
+
+      <section class="container" id="skils">
+        <h3 class="title-content">Sobre mi</h3>
+        <div class="card-skils">
+          <img src="./static/perfil.jpg" alt="imagen Skils" class="img-skils">
+          <div class="desc-skils">
+            <div class="skils-cv">
+              <p class="aboutp">Hola soy Johan Alvarado Desarrollador Frontend.
+                </br> Actualmente trabajo en Grupo Solvens como Auxilliar de Sistemas y Analista de Datos.
+                Me encuentro desarrollando un proyecto particular llamado Inkodeapp.</p>
+
+              <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                target="_blank" rel="noopener noreferrer" style="margin-bottom: 0;">
+                <button type="button" class="button">Ver curriculum</button></a>
+            </div>
+
+            <div class="progress">
+              <label for="html">HTML:</label>
+              <progress id="file" max="100" value="40" style="margin-top: 20px;"> 40% </progress>
+
+              <label for="css" style="margin-top: 20px;">CSS:</label>
+              <progress id="file" max="100" value="30" style="margin-top: 20px;"> 30% </progress>
+
+              <label for="javascript" style="margin-top: 20px;">Javascript:</label>
+              <progress id="file" max="100" value="10" style="margin-top: 20px;"> 10% </progress>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services container" id="services">
+        <h3 class="title-content">Servicios</h3>
+        <div class="containers">
+          <div class="cardservices" style="background-color: #45C3FF;">
+            <img src="static/kotlin.png" alt="kotlin" class="imgservices">
+            <span class="spanLang">Kotlin</span>
+            <p>Manejo de Kotlin como lenguaje de programacion de tipado estatico que permite elaborar
+              aplicaciones moviles y de servidor.</p>
+          </div>
+          <div class="divisorservices"></div>
+          <div class="cardservices" style="background-color: #526BFF;">
+            <img src="static/html.png" alt="html" class="imgservices">
+            <span class="spanLang">HTML</span>
+            <p>Manejo del lenguaje marcas de hipertexto, con el que se
+              realiza la creación básica de páginas web.</p>
+          </div>
+          <div class="divisorservices"></div>
+          <div class="cardservices" style="background-color: #8D45FF;">
+            <img src="static/css.png" alt="css" class="imgservices">
+            <span class="spanLang">CSS</span>
+            <p>creacion de la presentación de un documento
+              estructurado escrito en un lenguaje de marcado.​</p>
+          </div>
+        </div>
+      </section>
 
 
-    <section class="nonav" id="casa">
-      <img src="static/perfil.jpg" alt="perfil" class="imgperfil" />
-      <h1 class="title">Johan Alvarado</h1>
-      <h3 class="subtitle">Kotlin Developer</h3>
-      <div class="iconsnav">
-        <a href="https://www.linkedin.com/in/johan-jose-alvarado-4568031a6" target="_blank"><img class="icons"
-            src="static/linkedin.svg" alt="linkedin" /></a>
-        <a href="https://github.com/inkodeapp" target="_blank">
-          <img class="icons" src="static/github.svg" alt="github" /></a>
-        <a href="https://twitter.com/inkodeapp" target="_blank">
-          <img class="icons" src="static/twitter.svg" alt="twitter" /></a>
-        <a href="https://www.instagram.com/inkodeapp/" target="_blank">
-          <img class="icons" src="static/instagram.svg" alt="instagram" /></a>
-        <a href="http://www.inkodeapp.com/" target="_blank">
-          <img class="icons" src="static/web.svg" alt="web" /></a>
-      </div>
-      <a href="https://api.whatsapp.com/send?phone=+5491158551054&text=Hola,%20Johan%20Alvarado%20%C2%BFComo%20est%C3%A1s?"
-        target="_blank" rel="noopener noreferrer">
-        <button type="button" class="button">Contáctame</button></a>
-      <span class="scrool">Scrool Down</span>
-      <img class="icons" src="static/arrows.svg" alt="scrool" />
-    </section>
+      <section class="experience-container container" id="experience">
+        <h3 class="title-content">Experiencia</h3>
+        <div class="experience-container__topics">
+          <div class="experience-container__topics__card ">
 
-    <section class="aboutme" id="sobremi">
-      <span class="about">Sobre mi</span>
-      <div class="description">
-        <img src="static/perfil.jpg" alt="imagen de perfil" class="imgperfil1" />
-        <div class="card">
-          <div>
-            <p class="parrafo">
-              Desarrollador de aplicaciones móviles con el lenguaje de programación Kotlin con nociones para crear API'S
-              para la transferencia de información cliente servidor con Node.js y Python.
-            </p>
 
-            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-              target="_blank" rel="noopener noreferrer">
-              <button type="button" class="button">Linkedin</button></a>
+            <div class="exp-card">
+              <div class="experience-container__topics__card__data ">
+                <i class="fas fa-briefcase"></i>
+                <span class="subexp">2019-Junio-Actualidad</span>
+                <h4 class="title-exp">Grupo Solvens S.R.L.</h4>
+                <p class="experience-container__topics__card__data__description"> Auxiliar de Sisemas y Analista de
+                  datos.
+                </p>
+              </div>
+              <div class="experience-container__topics__card__data ">
+                <i class="fas fa-briefcase"></i>
+                <span class="subexp">2017-Agosto/2019-Enero</span>
+                <h4 class="title-exp">Acj High Voltage Ltda.</h4>
+                <p class="experience-container__topics__card__data__description"> Auxiliar de Sisemas y Analista de
+                  datos.
+                </p>
+              </div>
+            </div>
+            <div class="divisor"></div>
+
+            <div class="exp-card">
+              <div class="experience-container__topics__card__data ">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="subexp">2020-Mayo</span>
+                <h4 class="title-exp">Google</h4>
+                <p class="experience-container__topics__card__data__description"> Curso de Desarrollo de Apps Móviles.
+                </p>
+              </div>
+              <div class="experience-container__topics__card__data ">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="subexp">2019-Diciembre</span>
+                <h4 class="title-exp">SoloLearn</h4>
+                <p class="experience-container__topics__card__data__description"> SQL.
+                </p>
+              </div>
+              <div class="experience-container__topics__card__data ">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="subexp">2010-2016</span>
+                <h4 class="title-exp">Universidad Politécnica Territorial del Zulia</h4>
+                <p class="experience-container__topics__card__data__description"> Ingeniería electrónica.
+                </p>
+              </div>
+              <div class="experience-container__topics__card__data ">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="subexp">2014-actualidad</span>
+                <h4 class="title-exp">Instituto Universitario Politécnico Santiago Mariño</h4>
+                <p class="experience-container__topics__card__data__description"> Ingeniería de sistemas.
+                </p>
+              </div>
+            </div>
+
+
 
 
           </div>
-          <div class="pbar">
-            <label for="file1">HTML</label>
-            <progress id="file1" max="100" value="10"> 10% </progress>
-            <label for="file2">CSS</label>
-            <progress id="file2" max="100" value="20"> 20% </progress>
-            <label for="file3">Kotlin</label>
-            <progress id="file3" max="100" value="30"> 30% </progress>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="works-container container" id="works">
+        <h3 class="title-content">Mis trabajos</h3>
+        <div class="works-container__topics">
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-1.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span class="textoimg">Web design</span>
+            </div>
           </div>
-          </ul>
-        </div>
-      </div>
-    </section>
 
-    <section class="services" id="servicios">
-      <span class="about">Servicios</span>
-      <div class="containers">
-        <div class="cardservices" style="background-color: #45C3FF;">
-          <img src="static/kotlin.png" alt="kotlin" class="imgservices">
-          <span class="spanLang">Kotlin</span>
-          <p class="cardp">Manejo de Kotlin como lenguaje de programacion de tipado estatico que permite elaborar
-            aplicaciones moviles y de servidor.</p>
-        </div>
-        <div class="cardservicesc" style="background-color: #526BFF;">
-          <img src="static/html.png" alt="html" class="imgservices">
-          <span class="spanLang">HTML</span>
-          <p class="cardp">Manejo del lenguaje marcas de hipertexto, con el que se
-            realiza la creación básica de páginas web.</p>
-        </div>
-        <div class="cardservices" style="background-color: #8D45FF;">
-          <img src="static/css.png" alt="css" class="imgservices">
-          <span class="spanLang">CSS</span>
-          <p class="cardp">creacion de la presentación de un documento
-            estructurado escrito en un lenguaje de marcado.​</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="experiencia">
-      <span class="about">Experiencia</span>
-      <div class="containers">
-        <div class="cardexp">
-          <h3 class="experiencia">Laboral</h3>
-          <span class="spanExp">2019-Junio</span>
-          <h4 class="experiencia">Grupo Solvens S.R.L.</h4>
-          <p class="cardpe">Auxiliar de Sisemas.</p>
-          <span class="spanExp">2017-Agosto/2019-Enero</span>
-          <h4 class="experiencia">Acj High Voltage Ltda.</h4>
-          <p class="cardpe">Auxiliar de Sisemas y Analista de datos.</p>
-        </div>
-        <div class="dividir"> </div>
-        <div class="cardexp">
-          <h3 class="experiencia">Academica</h3>
-          <span class="spanExp">2020-Mayo</span>
-          <h4 class="experiencia">Google</h4>
-          <p class="cardpe">Curso de Desarrollo de Apps Móviles.</p>
-          <span class="spanExp">2019-Diciembre</span>
-          <h4 class="experiencia">SoloLearn</h4>
-          <p class="cardpe">SQL.</p>
-          <span class="spanExp">2010-2016</span>
-          <h4 class="experiencia">Universidad Politécnica Territorial del Zulia</h4>
-          <p class="cardpe">Ingeniería electrónica.</p>
-          <span class="spanExp">2014-actualidad</span>
-          <h4 class="experiencia">Instituto Universitario Politécnico Santiago Mariño</h4>
-          <p class="cardpe">Ingeniería de sistemas.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="trabajos">
-      <span class="about">Mis trabajos</span>
-      <div class="containers">
-        <a class="cardtrabajos" href="https://johanalvarado-ec04e.web.app/" target="_blank">
-          <span class="textosimg">Mi Portfolio</span>
-          <img src="static/pfolio.png" alt="kotlin" class="imgtrabajos">
-        </a>
-        <a class="cardtrabajosc" href="http://inkodeapp.com/" target="_blank">
-          <span class="textosimg">Inkodeapp</span>
-          <img src="static/inkode.png" alt="html" class="imgtrabajos">
-        </a>
-        <a class="cardtrabajos" href="http://yt.inkodeapp.com/" target="_blank">
-          <span class="textosimg">Youtube</span>
-          <img src="static/youtube.png" alt="css" class="imgtrabajos">
-        </a>
-      </div>
-      <div class="containers">
-        <div class="cardtrabajos">
-          <span class="textosimg">Trabajo 1</span>
-          <img src="static/trabajo-1.svg" alt="kotlin" class="imgtrabajos">
-        </div>
-        <div class="cardtrabajosc">
-          <span class="textosimg">Trabajo 2</span>
-          <img src="static/trabajo-2.svg" alt="html" class="imgtrabajos">
-        </div>
-        <div class="cardtrabajos">
-          <span class="textosimg">Trabajo 3</span>
-          <img src="static/trabajo-3.svg" alt="css" class="imgtrabajos">
-        </div>
-      </div>
-      <div class="boton">
-        <a href="https://api.whatsapp.com/send?phone=+5491158551054&text=Hola,%20Johan%20Alvarado%20%C2%BFComo%20est%C3%A1s?"
-          target="_blank" rel="noopener noreferrer">
-          <a href="trabajos.html"><button type="button" class="button">Ver Todos</button></a>
-      </div>
-    </section>
-
-    <section class="services" id="contacto">
-      <span class="about">Contáctame</span>
-      <div class="contactme">
-        <div class="cont">
-          <span style="margin-bottom: 16px;">Enviame un mensaje</span>
-          <span>Puedes contactarte conmigo a través del siguiente formulario.</span>
-        </div>
-        <form action="index.html" method="GET" id="formulario">
-          <div class="datosForm">
-            <input type="text" id="name" name="name" placeholder="Nombre">
-            <input type="text" id="mail" name="mail" placeholder="Correo Electronico">
+          <div class="works-container__topics__card center">
+            <img src="static/trabajo-2.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>First Mobile</span>
+            </div>
           </div>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
-          <button type="submit" class="button">Enviar</button>
-        </form>
-      </div>
-    </section>
-  </section>
 
-  <footer class="footer">
-    <h3 class="subtitle" style="margin-right: 25px;">Johan Alvarado</h3>
-    <div class="iconsfooter">
-      <a href="https://www.linkedin.com/in/johan-jose-alvarado-4568031a6" target="_blank"><img class="icons"
-          src="static/linkedin.svg" alt="linkedin" /></a>
-      <a href="https://github.com/inkodeapp" target="_blank">
-        <img class="icons" src="static/github.svg" alt="github" /></a>
-      <a href="https://twitter.com/inkodeapp" target="_blank">
-        <img class="icons" src="static/twitter.svg" alt="twitter" /></a>
-      <a href="https://www.instagram.com/inkodeapp/" target="_blank">
-        <img class="icons" src="static/instagram.svg" alt="instagram" /></a>
-      <a href="http://www.inkodeapp.com/" target="_blank">
-        <img class="icons" src="static/web.svg" alt="web" /></a>
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-3.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>Youtube Channel</span>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="works-container__topics">
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-4.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span class="textoimg">Photo magic</span>
+            </div>
+          </div>
+
+          <div class="works-container__topics__card center">
+            <img src="static/trabajo-5.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>Photo magic</span>
+            </div>
+          </div>
+
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-6.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>Photo magic</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="boton">
+          <a href="https://api.whatsapp.com/send?phone=+5491158551054&text=Hola,%20Johan%20Alvarado%20%C2%BFComo%20est%C3%A1s?"
+            target="_blank" rel="noopener noreferrer">
+            <a href="trabajos.html"><button type="button" class="button">Ver Todos</button></a>
+        </div>
+      </section>
+
+
+
+      <section class="services container" id="contactme">
+        <h3 class="title-content">Contáctame</h3>
+        <div class="contactme">
+          <div class="cont">
+            <span style="margin-bottom: 16px;">Enviame un mensaje</span>
+            <span>Puedes contactarte conmigo a través del siguiente formulario.</span>
+          </div>
+          <form action="index.html" method="GET" id="formulario">
+            <div class="datosForm">
+              <input type="text" id="name" name="name" placeholder="Nombre">
+
+              <input type="text" id="mail" name="mail" placeholder="Correo Electronico">
+            </div>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+            <button type="submit" class="button">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+
+
+
+
+
+      <footer class="footer">
+        <h3 class="subtitle" style="margin-right: 25px;">Johan Alvarado</h3>
+        <div class="iconsfooter">
+          <a href="https://www.linkedin.com/in/johan-jose-alvarado-4568031a6" target="_blank"><img class="icons"
+              src="static/linkedin.svg" alt="linkedin" /></a>
+          <a href="https://github.com/inkodeapp" target="_blank">
+            <img class="icons" src="static/github.svg" alt="github" /></a>
+          <a href="https://twitter.com/inkodeapp" target="_blank">
+            <img class="icons" src="static/twitter.svg" alt="twitter" /></a>
+          <a href="https://www.instagram.com/inkodeapp/" target="_blank">
+            <img class="icons" src="static/instagram.svg" alt="instagram" /></a>
+          <a href="http://www.inkodeapp.com/" target="_blank">
+            <img class="icons" src="static/web.svg" alt="web" /></a>
+        </div>
+      </footer>
     </div>
-  </footer>
+
+
+
+
+
+  </div>
+
+  <script src="https://kit.fontawesome.com/7aa36192fa.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -14,122 +14,151 @@
 
 <body>
 
-  <nav class="navBar">
-    <span class="titleNavBar">Johan Alvarado</span>
-    <ul class="listaNavBar">
-      <li class="items"> <a href="index.html#casa" class="secciones"><img src="static/home.svg" alt="home"
-            class="icons">
-          Home</a></li>
-      <li class="items"> <a href="index.html#sobremi" class="secciones"><img src="static/usuario.svg" alt="home"
-            class="icons">
-          Sobre mi</a></li>
-      <li class="items"> <a href="index.html#servicios" class="secciones"><img src="static/equipo.svg" alt="home"
-            class="icons">
-          Servicios</a></li>
-      <li class="items"> <a href="index.html#experiencia" class="secciones"><img src="static/apoyo.svg" alt="home"
-            class="icons">
-          Experiencia</a></li>
-      <li class="items"> <a href="index.html#trabajos" class="secciones"><img src="static/cronologia.svg" alt="home"
-            class="icons"> Mis trabajos</a></li>
-      <li class="items"> <a href="index.html#contacto" class="secciones"><img src="static/servicio.svg" alt="home"
-            class="icons">
-          Contáctame</a></li>
-    </ul>
-  </nav>
-  <div class="cuerpo">
-    <div class="menuMobile">
-      <label for="menu"><img src="static/menu.svg" alt="menu" class="menuIcon"></label>
-      <input type="checkbox" name="" id="menu">
-      <ul class="listaNavBarMobile">
-        <li class="items"> <a href="index.html/#casa" class="secciones"><img src="static/home.svg" alt="home"
-              class="icons">
-            Home</a></li>
-        <li class="items"> <a href="index.html#sobremi" class="secciones"><img src="static/usuario.svg" alt="home"
-              class="icons">
-            Sobre mi</a></li>
-        <li class="items"> <a href="index.html#servicios" class="secciones"><img src="static/equipo.svg" alt="home"
-              class="icons">
-            Servicios</a></li>
-        <li class="items"> <a href="index.html#experiencia" class="secciones"><img src="static/apoyo.svg" alt="home"
-              class="icons">
-            Experiencia</a></li>
-        <li class="items"> <a href="index.html#trabajos" class="secciones"><img src="static/cronologia.svg" alt="home"
-              class="icons"> Mis trabajos</a></li>
-        <li class="items"> <a href="index.html#contacto" class="secciones"><img src="static/servicio.svg" alt="home"
-              class="icons">
-            Contáctame</a></li>
+  <div class="main-container">
+    <section class="navbar-container__desktop">
+      <h1 class="titulo">Johan Alvarado</h1>
+      <ul class="lista-secciones">
+        <li><a href="index.html#home" class="secciones"> <img src="./static/home.svg" alt="icono home"
+              class="iconos">Home</a>
+        </li>
+        <li><a href="index.html#skils" class="secciones"> <img src="./static/usuario.svg" alt="icono home"
+              class="iconos">Sobre
+            mi</a>
+        </li>
+        <li><a href="index.html#services" class="secciones"> <img src="./static/equipo.svg" alt="icono home"
+              class="iconos">Servicios</a>
+        </li>
+        <li><a href="index.html#experience" class="secciones"> <img src="./static/apoyo.svg" alt="icono home"
+              class="iconos">Experiencia</a>
+        </li>
+        <li><a href="index.html#works" class="secciones"> <img src="./static/cronologia.svg" alt="icono home"
+              class="iconos">Mis
+            trabajos</a></li>
+        <li><a href="index.html#contactme" class="secciones"> <img src="./static/servicio.svg" alt="icono home"
+              class="iconos">Contactame</a></li>
       </ul>
+
+
+    </section>
+    <div class="full-container">
+      <section class="navbar-container__mobile">
+        <nav class="navbar-container__mobile__list">
+          <label for="navbar" class="navbar-container__mobile__list__label">
+            <input type="checkbox" id="navbar" class="navbar-input" />
+            <div class="navbar-open">
+              <i class="fas fa-bars" style="color:white; margin-bottom: 20px;"></i>
+            </div>
+            <div class="navbar-close">
+              <i class="fas fa-times" style="color:white; margin-bottom: 20px;"></i>
+            </div>
+            <div class="navbar-contet">
+              <ul class="lista-secciones">
+                <li><a href="index.html#home" class="secciones"> <img src="./static/home.svg" alt="icono home"
+                      class="iconos">Home</a>
+                </li>
+                <li><a href="index.html#skils" class="secciones"> <img src="./static/usuario.svg" alt="icono home"
+                      class="iconos">Sobre
+                    mi</a>
+                </li>
+                <li><a href="index.html#services" class="secciones"> <img src="./static/equipo.svg" alt="icono home"
+                      class="iconos">Servicios</a>
+                </li>
+                <li><a href="index.html#experience" class="secciones"> <img src="./static/apoyo.svg" alt="icono home"
+                      class="iconos">Experiencia</a>
+                </li>
+                <li><a href="index.html#works" class="secciones"> <img src="./static/cronologia.svg" alt="icono home"
+                      class="iconos">Mis
+                    trabajos</a></li>
+                <li><a href="index.html#contactme" class="secciones"> <img src="./static/servicio.svg" alt="icono home"
+                      class="iconos">Contactame</a></li>
+            </div>
+          </label>
+        </nav>
+      </section>
+
+
+      <section class="works-container container" id="works">
+        <h3 class="title-content">Mis trabajos</h3>
+        <div class="works-container__topics">
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-1.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span class="textoimg">Photo magic</span>
+            </div>
+          </div>
+
+          <div class="works-container__topics__card center">
+            <img src="static/trabajo-2.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>Photo magic</span>
+            </div>
+          </div>
+
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-3.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>Photo magic</span>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="works-container__topics">
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-4.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span class="textoimg">Photo magic</span>
+            </div>
+          </div>
+
+          <div class="works-container__topics__card center">
+            <img src="static/trabajo-5.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>Photo magic</span>
+            </div>
+          </div>
+
+          <div class="works-container__topics__card">
+            <img src="static/trabajo-6.svg" alt="css" class="imgtrabajos">
+            <div class="works-container__topics__card__mask">
+              <span>Photo magic</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="boton">
+          <a href="https://api.whatsapp.com/send?phone=+5491158551054&text=Hola,%20Johan%20Alvarado%20%C2%BFComo%20est%C3%A1s?"
+            target="_blank" rel="noopener noreferrer">
+            <a href="index.html"><button type="button" class="button">volver</button></a>
+        </div>
+      </section>
+
+
+
+      <footer class="footer">
+        <h3 class="subtitle" style="margin-right: 25px;">Johan Alvarado</h3>
+        <div class="iconsfooter">
+          <a href="https://www.linkedin.com/in/johan-jose-alvarado-4568031a6" target="_blank"><img class="icons"
+              src="static/linkedin.svg" alt="linkedin" /></a>
+          <a href="https://github.com/inkodeapp" target="_blank">
+            <img class="icons" src="static/github.svg" alt="github" /></a>
+          <a href="https://twitter.com/inkodeapp" target="_blank">
+            <img class="icons" src="static/twitter.svg" alt="twitter" /></a>
+          <a href="https://www.instagram.com/inkodeapp/" target="_blank">
+            <img class="icons" src="static/instagram.svg" alt="instagram" /></a>
+          <a href="http://www.inkodeapp.com/" target="_blank">
+            <img class="icons" src="static/web.svg" alt="web" /></a>
+        </div>
+      </footer>
     </div>
 
 
-    <div class="services" id="trabajos">
-      <span class="about">Mis trabajos</span>
-      <div class="containers">
-        <a class="cardtrabajos" href="https://johanalvarado-ec04e.web.app/" target="_blank">
-          <span class="textosimg">Mi Portfolio</span>
-          <img src="static/pfolio.png" alt="kotlin" class="imgtrabajos">
-        </a>
-        <a class="cardtrabajosc" href="http://inkodeapp.com/" target="_blank">
-          <span class="textosimg">Inkodeapp</span>
-          <img src="static/inkode.png" alt="html" class="imgtrabajos" target="_blank">
-        </a>
-        <a class="cardtrabajos" href="http://yt.inkodeapp.com/">
-          <span class="textosimg">Youtube</span>
-          <img src="static/youtube.png" alt="css" class="imgtrabajos">
-        </a>
-      </div>
-      <div class="containers">
-        <div class="cardtrabajos">
-          <span class="textosimg">Trabajo 1</span>
-          <img src="static/trabajo-1.svg" alt="kotlin" class="imgtrabajos">
-        </div>
-        <div class="cardtrabajosc">
-          <span class="textosimg">Trabajo 2</span>
-          <img src="static/trabajo-2.svg" alt="html" class="imgtrabajos">
-        </div>
-        <div class="cardtrabajos">
-          <span class="textosimg">Trabajo 3</span>
-          <img src="static/trabajo-3.svg" alt="css" class="imgtrabajos">
-        </div>
-      </div>
-      <div class="containers">
-        <div class="cardtrabajos">
-          <span class="textosimg">Trabajo 4</span>
-          <img src="static/trabajo-4.svg" alt="kotlin" class="imgtrabajos">
-        </div>
-        <div class="cardtrabajosc">
-          <span class="textosimg">Trabajo 5</span>
-          <img src="static/trabajo-5.svg" alt="html" class="imgtrabajos">
-        </div>
-        <div class="cardtrabajos">
-          <span class="textosimg">Trabajo 6</span>
-          <img src="static/trabajo-6.svg" alt="css" class="imgtrabajos">
-        </div>
-      </div>
-      <div class="boton">
-        <a href="https://api.whatsapp.com/send?phone=+5491158551054&text=Hola,%20Johan%20Alvarado%20%C2%BFComo%20est%C3%A1s?"
-          target="_blank" rel="noopener noreferrer">
-          <a href="index.html"><button type="button" class="button">Volver</button></a>
-      </div>
-    </div>
+
+
+
   </div>
-
-
-  <footer class="footer">
-    <h3 class="subtitle" style="margin-right: 25px;">Johan Alvarado</h3>
-    <div class="iconsfooter">
-      <a href="https://www.linkedin.com/in/johan-jose-alvarado-4568031a6" target="_blank"><img class="icons"
-          src="static/linkedin.svg" alt="linkedin" /></a>
-      <a href="https://github.com/inkodeapp" target="_blank">
-        <img class="icons" src="static/github.svg" alt="github" /></a>
-      <a href="https://twitter.com/inkodeapp" target="_blank">
-        <img class="icons" src="static/twitter.svg" alt="twitter" /></a>
-      <a href="https://www.instagram.com/inkodeapp/" target="_blank">
-        <img class="icons" src="static/instagram.svg" alt="instagram" /></a>
-      <a href="http://www.inkodeapp.com/" target="_blank">
-        <img class="icons" src="static/web.svg" alt="web" /></a>
-    </div>
-  </footer>
+  <script src="https://kit.fontawesome.com/7aa36192fa.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
