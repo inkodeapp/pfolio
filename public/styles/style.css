@@ -238,12 +238,20 @@ a {
   padding: 30px;
   box-sizing: border-box;
   width: 100%;
+  color: white;
 }
 
 .imgservices {
   width: 100px;
+  /* transform: rotateY(-90deg);
+  transform-style: preserve-3d;
+*/
   height: 100px;
 }
+/*.imgservices:hover{
+  transform: rotateY(90deg);
+  transition: all 1s linear;
+}*/
 
 .spanLang {
   margin: 22px 0px;
